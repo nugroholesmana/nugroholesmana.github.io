@@ -4,14 +4,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Font Google-->
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Markazi+Text|Noto+Serif" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/mystyle.css">
-    <title>Document</title>
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>Nugroho Lesmana Putra</title>
 </head>
 <body>
-    <h3 class="text-center">Hello World</h3>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <div class="top-nav fixed-top">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link scroll" id="menuAbout" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link scroll" id="menuProjects" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link scroll" id="menuContact" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://nugroholesmana.com" target="_blank">My Blog</a>
+            </li>
+        </ul>
+    </div>
+    <section class="header">
+        <div class="title">
+            <h2>Welcome, I am</h2>
+            <h1>Nugroho Lesmana Putra</h1>
+            <h3>Web Developer & IT Support</h3>
+            <a href="#about" class="button-down scroll"><i class="icon fas fa-chevron-down"></i></a>
+        </div>        
+    </section>
+    <section class="about animated fadeIn" id="about">
+        <div class="row">
+            <div class="col-md-6 description">
+                <h1>About Me</h1>
+                <p>saya seorang web developer yang terfokus pada bagian back-end dalam sebuah web aplikasi, 1 tahun pertama karir saya memulai sebagai freelance mengerjakan proyek skala kecil untuk kebutuhan personal di pekanbaru dan pada tahun kedua saya bergabung ke perusahaan game developer sebagai programmer yang menangani dan membuat API untuk koneksi game yang dibuat ke server database dan juga multiplayer. pada tahun ke 3 saya bekerja ke perusahaan start up digital yang menangani dan membuat web aplikasi internal di perusahaan tersebut.</p>
+            </div>
+            <div class="col-md-6 photo">
+                <img src="/assets/img/my-photo.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="col-md-12">
+                <h1>My Project</h1>
+                <ul class="nav portofolio-menu justify-content-center">
+                    <li class="nav-link"><a href="#" class="active" data-filter="*">All</a></li>
+                    <li class="nav-link"><a href="#" data-filter=".website">Website</a></li>
+                    <li class="nav-link"><a href="#" data-filter=".design">Design</a></li>                    
+                    <li class="nav-link"><a href="#" data-filter=".android">Android</a></li>
+                </ul>
+            </div>
+            <div class="main-portofolio">
+                <div class="portofolio-list">
+                    <div class="portofolio-item design">
+                        <img src="assets/img/p3.jpg" alt="">
+                        <div class="portofolio-overlay">
+                            <a href="#login" class="align-middle" data-toggle="modal"><i class="icon fas fa-book-open"></i> Detail</a>
+                        </div>
+                    </div>
+                    <div class="portofolio-item website">
+                        <img src="assets/img/p1.jpg" alt="">
+                        <div class="portofolio-overlay">
+                            <a href="#myPortofolio" class="align-middle" data-toggle="modal"><i class="icon fas fa-book-open"></i> Detail</a>
+                        </div>
+                    </div>
+                    <div class="portofolio-item website">
+                        <img src="assets/img/p2.jpg" alt="">
+                        <div class="portofolio-overlay">
+                            <a href="#furgoesmedia" class="align-middle" data-toggle="modal"><i class="icon fas fa-book-open"></i> Detail</a>
+                        </div>
+                    </div>
+                    <div class="portofolio-item android">
+                        <img src="assets/img/p4.jpg" alt="">
+                        <div class="portofolio-overlay">
+                            <a href="#gameTebakKuis" class="align-middle" data-toggle="modal"><i class="icon fas fa-book-open"></i> Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <p>I am open for hire and open to cooporation</p>
+        <div class="contact-info">            
+            <ul class="contact-nav">
+                <li><span class="label-contact"><i class="fas fa-envelope"></i></span> nugroholesmanap@gmail.com</li>
+                <li><span class="label-contact"><i class="fab fa-whatsapp"></i></span> 0852-6495-8430</li>
+            </ul>
+            <h1 class="title-social-media">Social Media</h1>
+            <ul class="nav justify-content-center">
+                <li class="nav-link"><a href="https://facebook.com/nugroholesmanap" target="_blank"><i class="icon fab fa-facebook"></i></a></li>
+                <li class="nav-link"><a href="https://linkedin.com/in/nugroholesmana" target="_blank"><i class="icon fab fa-linkedin"></i></a></li>
+                <li class="nav-link"><a href="https://instagram.com/nugroholesmana" target="_blank"><i class="icon fab fa-instagram"></i></a></li>
+                <li class="nav-link"><a href="https://github.com/nugroholesmana" target="_blank"><i class="icon fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer text-center">
+        <p>Copyright &copy; 2019 Nugroho Lesmana</p>
+    </section>
+    <!--Modal-->
+    <!-- my portofolio -->
+    <div class="modal" id="myPortofolio" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4" id="result">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="assets/img/p1.jpg" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h1>My Website Portofolio</h1>
+                            <hr>
+                            <p>Website ini dibuat statis tanpa adanya database dan di upload di host github. Adapun informasi tambahan yang digunakan pada saat pembuatan website ini adalah: </p>
+                            <ol>
+                                <li>HTML, CSS dan Javascript</li>
+                                <li>Framework css Bootstrap 4</li>
+                                <li>Library javascript Jquery</li>
+                                <li>Server Hosting Github</li>
+                            </ol>
+                            <p>untuk lihat demo bisa dikunjungi <a href="https://nugroholesmana.github.io" target="_blank">Disini</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- furgoes media-->
+    <div class="modal" id="furgoesmedia" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4" id="result">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="assets/img/p2.jpg" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Furgoes Media</h3>
+                            <p><a href="https://furgoesmedia.com" target="_blank">furgoesmedia.com</a></p>
+                            <hr>
+                            <p>Website media informasi untuk kesehatan, teknologi, kuliner dan beberapa informasi menarik lainnya. Website ini dibangun untuk kepentingan personal saja.</p>
+                            <p>Website ini dibangun menggunakan wordpress dan beserta pluginnya yang sudah tersedia dan template bawaan.</p>
+                            <p>Pekerjaan saya adalah membuat website ini go public dengan konten yang sudah disediakan dan meletakkan ke hosting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Design Login-->
+    <div class="modal" id="login" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4" id="result">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="assets/img/p3-full.jpg" alt="" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- game tebak kuis-->
+    <div class="modal" id="gameTebakKuis" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4" id="result">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="assets/img/p4.jpg" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Kuis Benar atau Salah</h3>
+                            <p><a href="https://play.google.com/store/apps/details?id=com.furgoes.TebakBenarApaSalah" target="_blank">Mainkan Disini</a></p>
+                            <hr>
+                            <p>Dibuat menggunakan Unity3d dengan bahasa pemograman C#. Bisa mendownload sourcenya <a href="https://github.com/nugroholesmana/game-kuis-benar-atau-salah" target="_blank">disini</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="assets/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    <script src="/assets/js/isotope.pkdg.min.js"></script>
+    <script src="assets/js/myjs.js"></script>
 </body>
 </html>
